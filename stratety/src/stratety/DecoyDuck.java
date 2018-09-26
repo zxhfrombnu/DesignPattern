@@ -1,0 +1,12 @@
+package stratety;
+
+public class DecoyDuck extends Duck {
+	public DecoyDuck() {
+		setFlyBehavior(new FlyNoWay());
+		setQuackBehavior(new MuteQuack());
+	}
+
+	public void display() {
+		System.out.println("I am a duck decoy");
+	}
+}
